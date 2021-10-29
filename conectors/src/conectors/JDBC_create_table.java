@@ -8,7 +8,8 @@ import java.sql.SQLException;
 public class JDBC_create_table {
 
   public static void muestraErrorSQL(SQLException e) {
-    System.err.println("SQL ERROR mensaje: " + e.getMessage());
+    System.err.println("SQL ERROR mensaje!"
+    		+ ": " + e.getMessage());
     System.err.println("SQL Estado: " + e.getSQLState());
     System.err.println("SQL codigo: " + e.getErrorCode());
   }
